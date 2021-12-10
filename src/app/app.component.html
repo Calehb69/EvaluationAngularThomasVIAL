@@ -6,6 +6,8 @@
 <app-statistique [maStat]="statRugby"></app-statistique>
 <app-statistique [maStat]="statTennis"></app-statistique> -->
 
+<input type="button" (click)="supprStat()" value="Supprimer" />
+
 <div *ngFor="let s of tabStat">
   <app-statistique [maStat]="s"></app-statistique>
   <app-statistique [maStat]="s"></app-statistique>
