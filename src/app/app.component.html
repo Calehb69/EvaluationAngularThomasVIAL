@@ -1,7 +1,12 @@
-<div>
+<!-- <div>
   <h2>{{statRugby.unTitre}}</h2>
   <h2>{{statTennis.unTitre}}</h2>
 </div>
 
 <app-statistique [maStat]="statRugby"></app-statistique>
-<app-statistique [maStat]="statTennis"></app-statistique>
+<app-statistique [maStat]="statTennis"></app-statistique> -->
+
+<div *ngFor="let s of tabStat">
+  <app-statistique [maStat]="s"></app-statistique>
+  <app-statistique [maStat]="s"></app-statistique>
+</div>
