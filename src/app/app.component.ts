@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Statistique } from './models/statistique';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
