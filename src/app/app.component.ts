@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { StatistiqueService } from 'src/services/statistique.service';
 import { Statistique } from './models/statistique';
 
 @Component({
@@ -7,13 +8,9 @@ import { Statistique } from './models/statistique';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-public tabStat: Statistique[] = [    
-    new Statistique('rugbysfezad-10-efqfe', 'Rugby Statistique', '42G'),
-    new Statistique('ffdfs-789-htrey-yjrher', 'Tennis', '54F'),
-    new Statistique('gdggaeqq-77-grqr', 'Aikido', '31A')
-  ];
+  tabStat!: StatistiqueService;
 
-constructor() {
+constructor(public statistiqueService:StatistiqueService) {
   setTimeout(() => {
     let statAikido = new Statistique(
     'gdggaeqq-77-grqr',
